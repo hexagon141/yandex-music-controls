@@ -1,0 +1,6 @@
+@import './variables.css';
+
+.dark {
+  --palette-primary: #1f272e;
+  --palette-text-color: #ffffff;
+}

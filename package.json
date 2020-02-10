@@ -1,0 +1,21 @@
+{
+  "name": "yandex-music-control",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Igor Ryzhov | hexagon141 | vinokur141@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "build": "parcel build src/popup.html src/content-script.ts src/communicator.ts src/background.ts --no-content-hash --experimental-scope-hoisting"
+  },
+  "dependencies": {
+    "effector": "^20.11.5",
+    "effector-dom": "0.0.9"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "@types/chrome": "0.0.93",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "sass": "^1.25.0",
+    "typescript": "^3.7.5"
+  }
+}

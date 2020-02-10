@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 250px;
+  padding: 15px;
+  background-color: var(--palette-primary);
+}

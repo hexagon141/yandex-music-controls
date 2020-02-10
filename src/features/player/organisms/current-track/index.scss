@@ -1,0 +1,13 @@
+.current-track {
+  margin: 10px 0;
+  color: var(--palette-text-color);
+
+  &__artist {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__name {
+
+  }
+}

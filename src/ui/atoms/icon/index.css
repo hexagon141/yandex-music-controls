@@ -1,0 +1,10 @@
+.icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  stroke: #2329D6;
+  stroke-width: 1;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  fill: none;
+}

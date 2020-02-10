@@ -1,0 +1,36 @@
+{
+  "name": "Yandex.Music Controls",
+  "version": "1.0.0",
+  "description": "Control your music from any page",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.music.yandex.ru/*",
+        "*://*.music.yandex.com/*",
+        "*://*.music.yandex.ua/*",
+        "*://*.music.yandex.by/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "communicator.js"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
