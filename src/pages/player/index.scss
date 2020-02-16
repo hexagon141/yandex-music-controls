@@ -1,6 +1,7 @@
-body {
-  margin: 0;
-  width: 250px;
-  height: 450px;
-  border-radius: 8px;
+.player {
+  overflow: hidden;
+
+  &__control {
+    padding: 20px;
+  }
 }

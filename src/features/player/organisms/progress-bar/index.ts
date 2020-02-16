@@ -1,4 +1,4 @@
-import {DOMProperty, h, spec} from 'effector-dom';
+import {h, spec} from 'effector-dom';
 import {$progress} from '../../model/interface';
 import './index.scss';
 
@@ -17,7 +17,7 @@ export function ProgressBar() {
           class: 'progress-bar__line',
         },
         style: {
-          width: $progress.map<DOMProperty>(percent => `${percent}%`),
+          width: $progress.map(percent => `${percent}%`),
         }
       })
     })

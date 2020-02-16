@@ -41,7 +41,19 @@ export const $shuffle = createStore<boolean>(false);
 export const $repeat = createStore<boolean>(false);
 export const $muted = createStore<boolean>(false);
 export const $volume = createStore<number>(0);
-export const $progress = createStore<number>(0);
+export const $progress = createStore<number>(41);
+
+type Track = {
+  artists: string[],
+  name: string,
+  cover: string
+}
+
+export const $track = createStore<Track | null>({
+  artists: ['The Weeknd'],
+  name: 'Blinding Lights',
+  cover: 'https://avatars.yandex.net/get-music-content/2373979/a158c8f2.a.9300859-1/400x400'
+});
 
 
 

@@ -5,11 +5,12 @@
   "author": "Igor Ryzhov | hexagon141 | vinokur141@gmail.com",
   "license": "ISC",
   "scripts": {
-    "build": "parcel build src/popup.html src/content-script.ts src/communicator.ts src/background.ts --no-content-hash --experimental-scope-hoisting"
+    "dev": "parcel src/popup.html",
+    "build": "parcel build src/popup.html --no-content-hash --experimental-scope-hoisting"
   },
   "dependencies": {
     "effector": "^20.11.5",
-    "effector-dom": "0.0.9"
+    "effector-dom": "0.0.11"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",

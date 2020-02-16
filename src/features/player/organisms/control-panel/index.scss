@@ -1,0 +1,42 @@
+.control-panel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "dislike prev play next like" "shuffle . settings . repeat";
+  grid-auto-rows: 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+
+  &__dislike {
+    grid-area: dislike;
+  }
+
+  &__prev {
+    grid-area: prev;
+  }
+
+  &__play {
+    grid-area: play;
+  }
+
+  &__next {
+    grid-area: next;
+  }
+
+  &__like {
+    grid-area: like;
+  }
+
+  &__shuffle {
+    grid-area: shuffle;
+  }
+
+  &__settings {
+    grid-area: settings;
+  }
+
+  &__repeat {
+    grid-area: repeat;
+  }
+}

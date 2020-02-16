@@ -1,0 +1,31 @@
+.control {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &[data-variant="primary"] {
+    background-color: var(--palette-yellow);
+  }
+
+  &[data-variant="ghost"] {
+    background: none;
+
+    &:hover {
+      .icon {
+        stroke: var(--palette-yellow);
+      }
+    }
+  }
+
+  &[data-size="default"] {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  &[data-size="small"] {
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+  }
+}

@@ -1,23 +1,20 @@
-import {h, using, spec} from 'effector-dom';
+import {h, spec, using} from 'effector-dom';
+import {$theme} from './features/theme';
+import './ui/theme/index.scss';
 import {Player} from './pages/player';
-import './ui/theme/dark.css';
 
 using(document.body, () => {
   h('div', () => {
     spec({
       attr: {
-        class: 'dark',
+        class: 'theme',
+      },
+      data: {
+        theme: $theme,
+        devContainer: true
       }
     });
 
-    h('div', () => {
-      spec({
-        attr: {
-          class: 'container'
-        }
-      });
-
-      Player();
-    })
-  })
+    Player();
+  });
 });

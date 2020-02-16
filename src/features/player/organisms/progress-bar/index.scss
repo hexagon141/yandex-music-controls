@@ -1,4 +1,5 @@
 .progress-bar {
+  margin: 20px 0;
   height: 2px;
   background-color: var(--palette-grey);
 
@@ -12,13 +13,21 @@
       content: "";
       position: absolute;
       top: 50%;
-      right: -1px;
+      right: -7px;
       transform: translateY(-50%);
-      width: 4px;
-      height: 4px;
+      width: 5px;
+      height: 5px;
       background-color: var(--palette-yellow);
-      border: 2px solid var(--palette-primary);
+      border: 2px solid #ffffff;
       border-radius: 50%;
+      cursor: pointer;
+      transition: transform .16s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateY(-50%) scale(1.9);
+      }
     }
   }
 }

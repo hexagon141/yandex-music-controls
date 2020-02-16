@@ -1,8 +1,9 @@
+import {Store} from 'effector';
 import {h} from 'effector-dom';
 import './index.scss';
 
 type CoverProperties = {
-  src: string,
+  src: Store<string>,
   placement: 'player' | 'track-list',
 }
 

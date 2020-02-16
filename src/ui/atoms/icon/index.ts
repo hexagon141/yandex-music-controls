@@ -8,7 +8,7 @@ type Icon = {
   height?: number,
 }
 
-export const Icon = ({name, width, height}: Icon) => {
+export function Icon ({name, width, height}: Icon) {
   h('svg', () => {
     spec({
       attr: {
@@ -26,4 +26,4 @@ export const Icon = ({name, width, height}: Icon) => {
       }
     })
   })
-};
+}
